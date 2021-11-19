@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Aqui indicamos el tipo de letra del body*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*Indicamos el tipo y color de letrar para los subtitulos h*/
+h1,h2,h3,h4,h5,h6{
+    color: #1d273b;
+    font-weight: 400;
+}
+/*Indicamos el margen del contenedor*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+/*Indicamos las medidas del contenedor 1 que es el subcontenedor de la clase contenedor*/
+.contenedor1{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+/*indicamos un tamaño de letra para el titulo h1*/
+h1{
+    font-size: 50px;
+
+}
+
+/*header- Indicamos valores a la cabeza de la pagina*/
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+/*Indicamos valores de la clase nav*/
+nav{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0 .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 0 40px;
+    transition: ease-in-out 0,5s;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+.nav .logo{
+    height: 170px;
+}
+.nav .logo img{
+    height: 100%;
+    vertical-align: top;
+}
+.enlaces-header{
+    font-weight: 300;
+    transition: ease-in-out 0,5s;
+}
+.nav .enlaces-header a{ 
+    text-decoration: none;
+    color: #5d6678;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-left: 20px;
+}
+.nav .enlaces-header a:hover{
+    color: #3257fa;
+}
+/*El menu hamburguer para cuando la pagina se use en versión mobil*/
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    display: none ;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+   transition: color 0.5s ease-in;
+}
+.hamburguer >i{
+    font-size: 25px;
+    line-height: 80px;
+}
+.contenido-header{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido-header>img{
+    width: 550px;
+    display: flex;
+    animation: ease-in animat 1s;
+}
+/*Esta animación permite transformar escalas*/
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.textos-header{
+    margin: 0 0 0 30px;
+}
+.contenido-header{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5d6678;
+}
+.contenido-header a{
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #446d7e;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130 .46);
+}
+.titulo{
+    font-size: 50px;
+}
+/* About us */
+/*Declaramos un color para el fondo de la clase articulo*/
+.about-us{
+    background: #f2f2f2;
+}
+/*declaramos atributos para el contenedor articulo*/
+.contenedor-articulo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+/*declaramos valores para el texto de articulo*/
+.articulo{
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+.articulo:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48 .26);
+
+}
+/*Cambiar color de las opciones*/
+.articulo>img{
+    font-size: 30px;
+    color: #fff;
+    background:#bfc8d8;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130 .46);
+}
+
+.articulo>svg{
+    font-size: 30px;
+    color: #fff;
+    background:#bfc8d8;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130 .46);
+}
+.articulo>i{
+    font-size: 30px;
+    color: #fff;
+    background: #bfc8d8;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130 .46);
+}
+.articulo>h3{
+    font-size: 24px;
+    margin-top: 30px;
+
+}
+
+.articulo>a{
+    color: #5d6678;
+    font-weight: 400;
+    text-decoration: none;
+}
+.articulo>a:hover{
+    color:burlywood;
+    transition: color .5s;
+
+}
+
+
+.contenedor1-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+input input100, input200,input300, input400 {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 200px;
+    border-radius: 0px;
+    padding: 45px 30px 10px 30px;
+    transition: 0.5s;
+}
+.form>img{
+    font-size: 30px;
+    color: #fff;
+    background:#bfc8d8;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130 .46);
+}
+
+
+
+/* footer parte baja de la pagina "padding" */
+footer{
+    background: #ffffff;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+.partFooter{
+    width: 20%;
+}
+.partFooter h4{
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.partFooter img{
+    width: 500px;
+    height: 400px;
+    margin-top: -150px;
+    margin-left: -100px;
+}
+.partFooter a{
+    display: block; 
+    text-decoration: none;
+    color: #5d6678;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+}
+.partFooter a:hover{
+    color: #3257fa;
+}
+.social-media i{
+    font-size: 20px;
+    display: inline-block;
+    color: #add6c7;
+    border: 1px solid #add6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+.social-media i:hover{
+    color: #fff;
+    background-color: blue;
+    border-color: blue;
+}
+
+/*Esto es para adoptarlo a diferentes plataformas*/
+@media screen and (max-width:800px){
+    .titulo{
+        font-size: 45px;
+    }
+    .contenido-header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+    .contenido-header>img{
+        width: 400px;
+    }
+    .textos-header{
+        margin: 0;
+    }
+    /* ABOUT US Que los articules se adapten a mobil*/
+    
+    .articulo{
+        width: 45%;
+    }
+    /* footer */
+
+    footer{
+        justify-content: space-evenly;
+    }
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+
+    }
+}
+@media  screen and (max-width:600px) {
+    .titulo{
+        font-size: 35px;
+    }   
+    h1{
+        font-size: 40px;
+    }
+    .contenido-header{
+        height: 650px;
+    }
+    .nav{
+        padding: 0 10px;
+    }
+    .contenido-header>img{
+        width: 200px;
+    }
+    .enlaces-header{
+       position: fixed;
+       background: #9EF7D1;
+
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100%);
+    }
+    .nav .menudos{
+        -webkit-clip-patch: circle(133.8% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+
+    .hamburguer{
+        display: block;
+    }
+
+    /*about us*/
+    .articulo{
+        width: 95%;
+    }
+    /* footer */
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+      /* footer */
+      .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+}
